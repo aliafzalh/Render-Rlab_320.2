@@ -1,12 +1,32 @@
-# React + Vite
+# Rendering Arrays in React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This React project demonstrates how to render nested arrays and objects using separate components. The app displays a list of learners, each with a name, bio, and multiple test scores.
 
-Currently, two official plugins are available:
+## 🛠 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Uses `useState` to hold an array of learners.
+- Renders learner data dynamically.
+- Breaks the UI into reusable components:
+  - `UserList` – maps through learners.
+  - `Learner` – displays learner name, bio, and scores.
+  - `Score` – shows each test date and score.
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+src/
+├── components/
+│ ├── UserList.jsx # Renders all learners
+│ ├── Learner.jsx # Renders a single learner's info
+│ └── Score.jsx # Renders a single score
+├── App.jsx # Root component
+├── App.css # Optional styling
+└── main.jsx # Entry point (if using Vite)
+
+
+## 🧪 Sample Output
+
+Each learner displays:
+
+- **Name**
+- **Bio**
+- A list of scores like:
