@@ -1,6 +1,6 @@
 import Score from "./Score";
 
-const Learner = ({ learner }) => {
+function Learner ({ learner }) {
   return (
     <div>
       <h2>{learner.name}</h2>

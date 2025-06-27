@@ -1,4 +1,4 @@
-const Score = ({score}) => {
+function Score ({score}) {
     return (
         <li>
             <strong>Date:</strong> {score.date} |
